@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*positioning elements*/
 video{
     position: absolute;
     top: 0;
@@ -14,20 +15,39 @@ video{
 }
 
 .button-container{
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #vol-control {
-    position: absolute;
-    left: 50%;
-    margin-left: -70px;
-    top: 30%;
+    position: fixed;
+    bottom: 90%;
+    left: 47%;
 }
 
+button{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.2s;
+    
+    /*Displays buttons in vertical format*/
+    display: block;
 
+    height: 40px;
+    width: 150px;
+    font-size: 22px;
+    margin: 13px;
 
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+
+    
+}
+
+button:hover {
+    background-color: black; 
+    color: white;
+  }
+
+  
