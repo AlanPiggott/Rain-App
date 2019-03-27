@@ -13,26 +13,23 @@ video{
     object-fit: cover;
     z-index: -1;
 }
-
+/*positioning button*/
 .button-container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+/*positioning volume control*/
 #vol-control {
     position: fixed;
     bottom: 90%;
     left: 47%;
 }
-
+/*styling button*/
 button{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.2s;
     
-    /*Displays buttons in vertical format*/
-    display: block;
-
     height: 40px;
     width: 150px;
     font-size: 22px;
@@ -44,7 +41,7 @@ button{
 
     
 }
-
+/*changes button color when use hovers over it*/
 button:hover {
     background-color: black; 
     color: white;
