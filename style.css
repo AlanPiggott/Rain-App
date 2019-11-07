@@ -8,47 +8,112 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
 }
 
+button {
+  background-color: transparent;
+  color: white;
+  width: 100px;
+  height: 80px;
+  margin-top: 12px;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  border: 8px transparent;
+}
+
+
 .button-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.environment {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sounds {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 1%;
+}
+
+
+span.btn1 {
+    background: url(https://image.flaticon.com/icons/png/128/31/31128.png) no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+
+span.btn2 {
+    background: url(https://image.flaticon.com/icons/png/512/26/26920.png) no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+
+span.btn3 {
+    background: url("https://www.flaticon.com/premium-icon/icons/svg/2046/2046479.svg") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+
+
+span.btn4 {
+    background: url("./images/window.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+
+span.btn5 {
+    background: url("./images/raincloud.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+
+span.btn6 {
+    background: url("./images/storm.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+
 }
 
 #vol-control {
-    position: fixed;
-    bottom: 90%;
-    left: 46.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 100px;
 }
-
-button{
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.2s;
-    
-    
-    height: 40px;
-    width: 150px;
-    font-size: 22px;
-    margin: 13px;
-
-    background-color: #019DBC;
-    color: white;
-    border-radius: 4px;
-
-    padding: 0;
-    border: none;
-
-    
-}
-
-button:hover {
-    background-color: white; 
-    color: black;
-  }
-
-  
